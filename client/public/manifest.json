@@ -1,0 +1,6 @@
+{
+  "short_name": "Play Cards Bot",
+  "name": "Telegram game bot PlayCardsBot",
+  "start_url": ".",
+  "display": "standalone"
+}
