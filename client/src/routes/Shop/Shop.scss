@@ -1,0 +1,53 @@
+@import '../../styles/themes/default';
+@import '../../styles/mixins/link_btn';
+
+.shop {
+  display: block;
+  margin: 70px auto;
+  width: 1000px;
+
+  .section {
+    display: flex;
+    justify-content: space-between;
+    background-color: $shop-section-bg;
+    border-radius: 25px;
+    height: 250px;
+    margin: 40px auto;
+    align-items: center;
+
+    .info {
+      display: block;
+      margin-left: 100px;
+
+      .title {
+        color: $text;
+        text-decoration: none;
+        font-size: 62px;
+
+        &:hover {
+          color: darken($text, 15%);
+        }
+      }
+
+      .details {
+        font-size: 28px;
+        font-style: italic;
+      }
+
+      .btn_deck_ref {
+        @include link-button(
+          //
+            $btn-color,
+          10px 78px,
+          36px 0 0 0,
+          30px
+        );
+      }
+    }
+
+    img {
+      height: 180px;
+      margin-right: 50px;
+    }
+  }
+}

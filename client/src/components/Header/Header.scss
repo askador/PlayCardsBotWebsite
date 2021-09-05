@@ -1,0 +1,33 @@
+@import '../../styles/themes/default';
+
+header {
+  display: flex;
+  top: 0;
+  left: 0;
+  padding: 12px 48px 12px 58px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  background: #101c33;
+  color: $text;
+
+  .logo {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    font-size: 23px;
+    height: 55px;
+    width: auto;
+    align-items: center;
+
+    img {
+      height: 48px;
+      transform: scale(1.35);
+      padding-right: 8px;
+    }
+
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+}

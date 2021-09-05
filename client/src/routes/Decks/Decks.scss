@@ -1,0 +1,42 @@
+@import '../../styles/themes/default';
+
+.decks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  width: 80%;
+
+  .item {
+    border-radius: 7% 7% 4% 4%;
+
+    background: $decks-list-item-bg;
+
+    height: auto;
+    width: 268px;
+    margin: 18px;
+
+    img {
+      width: 100%;
+      height: auto;
+
+      &:hover {
+        transform: scale(1.1) translate(3px, 0px);
+      }
+    }
+
+    .title {
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      font-size: 46px;
+      text-decoration: none;
+      color: $text;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

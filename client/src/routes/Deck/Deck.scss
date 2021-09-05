@@ -1,0 +1,74 @@
+@import '../../styles/themes/default';
+
+.deck {
+  color: $text;
+  margin: 0 auto;
+  display: block;
+  width: 67%;
+
+  .data {
+    display: block;
+    margin: 0 auto;
+    width: 540px;
+    word-wrap: break-word;
+
+    .title {
+      font-size: 55px;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .data2_0 {
+      width: 320px;
+      margin: 0 auto;
+      text-align: center;
+
+      .author {
+        font-size: 22px;
+      }
+
+      .info {
+        font-size: 19px;
+      }
+    }
+  }
+
+  .items {
+    display: block;
+    margin: 32px auto;
+
+    .suit {
+      margin-top: 22px;
+
+      .bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-size: 28px;
+        height: 58px;
+
+        background-color: $deck-suit-bg;
+        border-radius: 10px 10px 10px 10px;
+
+        cursor: pointer;
+
+        .name {
+          margin-left: 50px;
+          letter-spacing: 1.2px;
+        }
+
+        .expand_ico {
+          margin-right: 30px;
+
+          width: 20px;
+          transition: transform 0.3s ease;
+
+          &.open {
+            transform: scaleY(-1);
+          }
+        }
+      }
+    }
+  }
+}

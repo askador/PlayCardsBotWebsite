@@ -1,0 +1,33 @@
+@import './styles/themes/default';
+
+body {
+  color: $text;
+  background-color: $bg;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* scroll width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* scroll track */
+::-webkit-scrollbar-track {
+  background: $scrollbar-track;
+  border-radius: 15px;
+}
+
+/* scroll thumb */
+::-webkit-scrollbar-thumb {
+  background: $scrollbar-thumb;
+  border-radius: 15px;
+}
+
+/* scroll thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $scrollbar-thumb-hover;
+}
